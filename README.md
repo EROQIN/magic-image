@@ -7,18 +7,10 @@
 ```
 magic-image/
 ├── README.md                    # 项目说明文档
-├── BUG_FIX_SUMMARY.md          # Bug修复报告
 ├── magic_image_creator.cpp      # 魔法图片生成器源码
 ├── magic_image_viewer.cpp       # 魔法图片查看器源码（已修复）
-├── magic_image_creator          # 生成器可执行文件
-├── magic_image_viewer           # 查看器可执行文件
 ├── images/                      # 图片文件目录
 │   ├── magic_image_sample.jpg   # 示例魔法图片
-│   ├── extracted_first_image.jpg   # 提取的第一张图片
-│   └── extracted_hidden_image.jpg  # 提取的隐藏图片
-└── build/                       # 构建目录
-    └── Debug/
-        └── outDebug             # 调试版本可执行文件
 ```
 
 ## 功能特性
@@ -115,16 +107,6 @@ g++ -std=c++11 -O2 -o magic_image_viewer magic_image_viewer.cpp
 图片已提取到: extracted_first_image.jpg (大小: 144612 字节)
 ```
 
-## Bug修复记录
-
-本项目修复了魔法图片查看器的重要bug：
-
-1. **✅ 第一张图片提取异常**：从316字节修复到正确的144612字节
-2. **✅ 第二张图片显示错误**：修复了魔法模式的显示逻辑
-3. **✅ 字节位置计算错误**：实现精确的边界检测算法
-4. **✅ 文件头读写逻辑错误**：避免图片内部字节序列的误判
-
-详细修复报告请查看 `BUG_FIX_SUMMARY.md`。
 
 ## 技术原理
 
