@@ -155,4 +155,4 @@ g++ -std=c++11 -O2 -o magic_image_viewer magic_image_viewer.cpp
 
 ## 许可证
 
-本项目采用 MIT 许可证。
+本项目采用 MIT 许可证。# magic-image
